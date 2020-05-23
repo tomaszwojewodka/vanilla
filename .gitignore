@@ -4,6 +4,16 @@ target/
 !**/src/main/**
 !**/src/test/**
 
+######################
+# Node
+######################
+/node/
+node_tmp/
+node_modules/
+npm-debug.log.*
+/.awcache/*
+/.cache-loader/*
+
 ### STS ###
 .apt_generated
 .classpath
