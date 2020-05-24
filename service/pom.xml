@@ -9,6 +9,7 @@
     </parent>
     <groupId>com.hudela.vanilla</groupId>
     <artifactId>vanilla-service</artifactId>
+    <packaging>jar</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>service</name>
     <description>Vanilla service</description>
@@ -18,6 +19,11 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.hudela.vanilla</groupId>
+            <artifactId>vanilla-web</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -94,5 +100,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

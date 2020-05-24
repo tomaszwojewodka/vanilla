@@ -13,7 +13,7 @@
     "ng": "ng",
     "conventional-changelog": "conventional-changelog",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod=true --outputPath=dist/META-INF/resources",
     "build:prod": "npm run build -- --prod --aot",
     "test": "ng test",
     "test:coverage": "rimraf coverage && npm run test -- --code-coverage",
