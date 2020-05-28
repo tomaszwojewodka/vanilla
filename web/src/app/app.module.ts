@@ -20,6 +20,8 @@ import {
     NbToastrModule,
     NbWindowModule,
 } from '@nebular/theme';
+import {httpInterceptorProviders} from './http-interceptors';
+import {environment} from '../environments/environment';
 
 @NgModule({
     declarations: [AppComponent],
@@ -43,6 +45,11 @@ import {
         CoreModule.forRoot(),
     ],
     bootstrap: [AppComponent],
+    providers: [
+        httpInterceptorProviders,
+        {provide: 'BASE_API_URL', useValue: environment.apiUrl},
+
+    ],
 })
 export class AppModule {
 }
