@@ -4,9 +4,7 @@ target/
 !**/src/main/**
 !**/src/test/**
 
-######################
-# Node
-######################
+### Node ###
 node/
 node_tmp/
 node_modules/
@@ -40,3 +38,4 @@ build/
 
 ### VS Code ###
 .vscode/
+

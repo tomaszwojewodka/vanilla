@@ -21,24 +21,32 @@ If you need more features, and a commercial support **consider buying Akveo [Jav
  
 ## Usage
 ### Production
-./mvnw clean install 
-
-java -jar service/target/vanilla-service-0.0.1-SNAPSHOT.jar 
+> ./mvnw clean install 
+> 
+> java -jar service/target/vanilla-service-0.0.1-SNAPSHOT.jar 
 
 Open the browser [http://localhost:8080](http://localhost:8080)
 
 ### Development
-cd service
-
-../mvnw spring-boot:run
-
-cd web
-
-../mvnw frontend:install-node-and-npm
-
-npm run start
+> cd service
+> 
+> ../mvnw spring-boot:run
+> 
+> cd web
+> 
+> ../mvnw frontend:install-node-and-npm
+>
+> npm run start
 
 Open the browser [http://localhost:4200](http://localhost:4200)
+
+Run Postgres, Keycloak and Adminer using docker compose
+
+> sudo docker-compose -f service/src/main/docker/all-services.yml up --build
+
+Be sure to change passwords in \*-password files.
+Don't use production passwords, add the files to git ignore in your project.
+**For production use docker secrets**
 
 ## References:
 - [ngx-admin by Akveo](https://github.com/akveo/ngx-admin)
