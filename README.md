@@ -56,3 +56,4 @@ Don't use production passwords, add the files to git ignore in your project.
 - [Hexagonal Architecture](https://reflectoring.io/spring-hexagonal/)
 - [A Minimalist Guide to Building Spring Boot Angular 5 Applications](https://shekhargulati.com/2017/11/08/a-minimalist-guide-to-building-spring-boot-angular-5-applications/)
 - [How do I set the baseUrl for Angular HttpClient](https://stackoverflow.com/questions/45735655/how-do-i-set-the-baseurl-for-angular-httpclient)
+- [SECURING WEB APPLICATIONS WITH KEYCLOAK USING OAUTH 2.0 AUTHORIZATION CODE FLOW AND PKCE](https://ordina-jworks.github.io/security/2019/08/22/Securing-Web-Applications-With-Keycloak.html)
